@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.blurred-background {
+    background: url('work-team-digital-art.jpg') center/cover no-repeat;
+    filter: blur(4px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+}
+
+.registration-form {
+    width: 100%;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white */
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 30px;
+    margin: auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #67046e;
+    z-index: 2;
+}
+
+.container h2 {
+    font-size: 33px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #0f0216;
+}
+
+.input-name {
+    width: 100%;
+    position: relative;
+    margin: 16px 0;
+}
+
+.lock,
+.email {
+    padding: 10px 11px;
+}
+
+.name,
+.text-name {
+    width: 100%;
+    padding: 12px 0 12px 42px;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.text-name:hover,
+.name:hover {
+    background-color: #f3eefe;
+}
+
+.input-name i {
+    position: absolute;
+    font-size: 19px;
+    color: #81007f;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+.radio-button {
+    margin-right: 4px;
+}
+
+.Role {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    appearance: none;
+    transition: all 0.2s ease;
+}
+
+.Role:hover,
+.Role:focus {
+    background: #f3eefe;
+    border-color: #6a1b9a;
+    outline: none;
+}
+
+.check {
+    margin-right: 15px;
+    position: relative;
+}
+
+.check::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border: 2px solid #ccc;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+}
+
+.check::after {
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+
+.check-button {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    width: 1px;
+    font-size: 35px;
+}
+
+.check-button:hover + .check::before {
+    border-color: black;
+}
+
+.check-button:checked + .check::before {
+    border-color: #6a1b9a;
+}
+
+.check-button:checked + .check::after {
+    animation: check 0.8s ease;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: #6a1b9a;
+}
+
+@keyframes check {
+    0% { height: 0; width: 0; }
+    25% { height: 0; width: 7px; }
+    50% { height: 20px; width: 7px; }
+}
+
+.button {
+    width: 100%;
+    padding: 12px;
+    background: #67046e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #8e44ad;
+}

@@ -1,0 +1,99 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #28032c;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.blurred-background {
+    background: url('pay2.avif') center/cover no-repeat;
+    filter: blur(4px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+}
+h1 {
+    color: #4d0250;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #3e023c;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid #2d012d;
+    font-size: 22px;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #3a013f;
+}
+
+button {
+    background-color: #55025b;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8f4a9b;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid #330235;
+}
+
+th,td{
+    border: 1px solid #3e023c;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;;
+}
+th {
+    background-color: #46024e;
+    color: white;
+}
+
+tr:hover {
+    background-color: #d0cbd2;
+}
+a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 10px;
+    background-color: #530253;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #8e378b;
+}

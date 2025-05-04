@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    background-color: #efd5ef;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Container */
+h1 {
+    color: #530362;
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input Fields & Select Box */
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #7c0f8d;
+    box-shadow: 0 0 5px rgba(125, 12, 150, 0.5);
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    background-color: #5c0b67;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #cf76e7e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}

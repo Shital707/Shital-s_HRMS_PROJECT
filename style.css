@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures body takes full height of viewport */
+    display: flex;
+    flex-direction: column; /* Ensures child elements stack vertically */
+}
+
+.blurred-background {
+    background: url('hr3.jpg') center/cover no-repeat;
+    filter: blur(2px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 325px;
+    height: 100vh;
+    background: rgba(207, 224, 231, 0.2);
+    color: rgb(53, 1, 61);
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(58, 2, 70);
+}
+
+.profile {
+    margin-bottom: 10px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+/* Sidebar Navigation */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgb(58, 2, 70);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #dae1e6; /* Lighter Purple */
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+/* Content Area */
+.content {
+    margin-left: 250px; /* Push content to the right */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.content p {
+    font-size: 18px;
+    color: #380f55; /* Medium Purple */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .content {
+        margin-left: 200px;
+    }
+}

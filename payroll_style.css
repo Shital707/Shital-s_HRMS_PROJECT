@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #ede7f6;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+
+}
+
+.blurred-background {
+    background: url('pay2.avif') center/cover no-repeat;
+    filter: blur(2px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+}
+
+/* Form Container */
+form {
+    background: rgba(224, 217, 225, 0.25);
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #300230;
+    font-size: 40px;
+}
+
+/* Form Labels */
+label {
+    font-weight: bold;
+    font-size: 19px;
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #9c8b8b;
+    border-radius: 5px;
+}
+input:hover,select:hover{
+    background: #f3d2ec;
+}
+
+button {
+    background: #440148;
+    color: rgb(241, 225, 243);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+button:hover {
+   background: #9f508e;
+}
+
+a{
+    font-size: 19px;
+    font-weight: bold;
+}
+a{
+    color: rgb(44, 2, 42);
+}

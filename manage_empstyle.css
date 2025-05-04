@@ -1,0 +1,174 @@
+/* General Styling */
+body {
+   
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.blurred-background {
+    background: url('work-team-digital-art.jpg') center/cover no-repeat;
+    filter: blur(4px);
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+}
+
+/* Full Page Container */
+.container {
+    width: 95%;
+    max-width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.25); /* Semi-transparent white */
+    box-shadow: 0px 5px 15px rgba(81, 41, 111, 0.3);
+    border-radius: 10px;
+}
+
+/* Page Title */
+h1 {
+    color: #31023f; /* Dark Purple */
+    font-size: 33px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Add Employee Button */
+.btn1 {
+    background-color: #67046e;
+    color: white;
+}
+
+.btn1:hover {
+    background-color: #ef96f7;
+}
+
+/* Logout Button */
+.btn2 {
+    background-color:#67046e;
+    color: white;
+}
+
+.btn2:hover {
+    background-color: #ef96f7;
+}
+
+/* Edit Button */
+.btn3 {
+    background-color: #67046e; /* Yellow */
+    color: white;
+}
+
+.btn3:hover {
+    background-color: #ef96f7;
+}
+
+/* Delete Button */
+.btn4 {
+    background-color:#67046e; /* Red */
+    color: white;
+}
+
+.btn4:hover {
+    background-color: #ef96f7;
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: rgba(130, 129, 130, 0.25); /* Semi-transparent white */
+}
+
+.table thead {
+    background: #67046e;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table thead th {
+    padding: 15px;
+    font-size: 14px;
+}
+
+.table tbody tr {
+    transition: 0.3s;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background: rgba(240, 179, 235, 0.25); /* Semi-transparent white */
+}
+
+td, th {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Full Page Table */
+.full-page-table {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        display: block;
+        height: auto;
+    }
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+    .table {
+        font-size: 12px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+}
